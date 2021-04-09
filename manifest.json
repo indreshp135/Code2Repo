@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "Code2Repo",
+	"version": "1.0",
+	"description": "Send Code directly to repo",
+	"icons": {
+		"128": "icon/icon.png"
+	},
+	"browser_action": {
+		"default_icon": "icon/icon.png",
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"scripts": ["eventPage.js", "junk/jquery.min.js"],
+		"persistent": true
+	},
+	"permissions": [
+		"notifications",
+		"contextMenus",
+		"tabs",
+		"storage",
+		"management"
+	]
+}
